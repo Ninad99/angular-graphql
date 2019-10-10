@@ -10,12 +10,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { RelativeTimePipe } from './relative-time/relative-time.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LaunchListComponent,
-    ListItemDetailComponent
+    ListItemDetailComponent,
+    RelativeTimePipe
   ],
   imports: [
     BrowserModule,

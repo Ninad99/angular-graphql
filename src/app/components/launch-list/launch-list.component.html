@@ -15,7 +15,7 @@
                     />
                     <mat-card-title>{{ launch.mission_name }}</mat-card-title>
                     <mat-card-subtitle>
-                        {{ launch.rocket.rocket_name }}
+                        {{ launch.rocket.rocket_name }} - launched {{ launch.launch_date_utc | relativeTime }}
                     </mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
