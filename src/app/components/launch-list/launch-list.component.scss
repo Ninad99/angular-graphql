@@ -1,0 +1,19 @@
+.container {
+    padding-top: 20px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+
+    .card {
+        cursor: pointer;
+        max-width: 350px;
+        padding: 1rem;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, .4);
+        margin-bottom: 10px;
+
+        mat-card-header {
+            padding-bottom: .5rem;
+        }
+    }
+}

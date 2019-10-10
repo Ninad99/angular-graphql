@@ -1006,7 +1006,7 @@ export type PastLaunchesListQuery = (
       & Pick<LaunchRocket, 'rocket_name' | 'rocket_type'>
     )>, links: Maybe<(
       { __typename?: 'LaunchLinks' }
-      & Pick<LaunchLinks, 'flickr_images' | 'video_link' | 'article_link'>
+      & Pick<LaunchLinks, 'flickr_images' | 'video_link' | 'article_link' | 'mission_patch_small'>
     )> }
   )>>> }
 );
@@ -1050,6 +1050,7 @@ export const PastLaunchesListDocument = gql`
       flickr_images
       video_link
       article_link
+      mission_patch_small
     }
     launch_date_utc
   }

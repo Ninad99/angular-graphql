@@ -1,1 +1,37 @@
-<p>list-item-detail works!</p>
+<ng-container *ngIf="launchDetails$ | async as launchDetails">
+    <section style="padding-top: 20px;">
+        <mat-card style="width: 400px; margin: auto; box-shadow: 2px 4px 10px rgba(0, 0, 0, .4); padding: 20px;">
+            <mat-card-header>
+                <mat-card-title>{{ launchDetails.mission_name }}</mat-card-title>
+            </mat-card-header>
+            <img
+                height="400"
+                width="200"
+                mat-card-image
+                [src]="launchDetails.links.mission_patch"
+                alt="Mission patch of {{ launchDetails.mission_name }}"
+            />
+            <mat-card-content>
+                <p>{{ launchDetails.details }}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button>
+                    <a href="{{ launchDetails.links.article_link }}">Article</a>
+                </button>
+                <button mat-raised-button>
+                    <a href="{{ launchDetails.links.video_link }}">Video</a>
+                </button>
+            </mat-card-actions>
+        </mat-card>
+    </section>
+    <section class="photo-grid">
+        <img
+            *ngFor="let pic of launchDetails.links.flickr_images"
+            [src]="pic"
+            alt="Picture of {{ launchDetails.mission_name }}"
+            height="300"
+            width="300"
+            loading="lazy"
+        />
+    </section>
+</ng-container>

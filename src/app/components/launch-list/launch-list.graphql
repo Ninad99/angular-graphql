@@ -15,6 +15,7 @@ query pastLaunchesList($limit: Int!) {
             flickr_images
             video_link
             article_link
+            mission_patch_small
         }
         launch_date_utc
     }
