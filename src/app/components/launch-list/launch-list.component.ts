@@ -13,14 +13,9 @@ export class LaunchListComponent implements OnInit {
   constructor(private pastLaunchesService: PastLaunchesListGQL) { }
 
   pastLaunches$ = this.pastLaunchesService
-    .fetch({ limit: 24 })
-    .pipe(map(res => {
-        console.log(res);
-        return res.data.launchesPast
-      })
-    )
+    .fetch({ limit: 2 })
+    .pipe(map(res => res.data.launchesPast))
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

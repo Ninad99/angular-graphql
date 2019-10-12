@@ -19,7 +19,7 @@ export class ListItemDetailComponent implements OnInit {
   launchDetails$ = this.route.paramMap.pipe(
     map((params) => params.get('id') as string),
     switchMap((id) => this.launchDetailsService.fetch({ id })),
-    map((res) => { console.log(res.data.launch); return res.data.launch; })
+    map((res) => res.data.launch)
   );
 
   ngOnInit() {
