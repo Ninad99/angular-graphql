@@ -5,7 +5,7 @@
         <section class="container">
             <mat-card class="card"
                 *ngFor="let launch of pastLaunches"
-                [routerLink]="['/', launch.id]">
+                routerLink="/launchlist/{{ launch.id }}">
                 <mat-card-header>
                     <img
                         height="100"

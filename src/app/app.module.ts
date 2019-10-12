@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { LaunchListComponent } from './components/launch-list/launch-list.component';
 import { ListItemDetailComponent } from './components/list-item-detail/list-item-detail.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 import { RelativeTimePipe } from './relative-time/relative-time.pipe';
 
@@ -21,6 +22,7 @@ import { RelativeTimePipe } from './relative-time/relative-time.pipe';
     LaunchListComponent,
     ListItemDetailComponent,
     LandingComponent,
+    PageNotFoundComponent,
     RelativeTimePipe
   ],
   imports: [
