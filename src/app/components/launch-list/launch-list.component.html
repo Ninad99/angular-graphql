@@ -1,5 +1,7 @@
 <ng-container *ngIf="pastLaunches$ | async as pastLaunches">
     <main>
+        <app-landing></app-landing>
+        
         <section class="container">
             <mat-card class="card"
                 *ngFor="let launch of pastLaunches"

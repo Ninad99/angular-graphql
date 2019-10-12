@@ -1,3 +1,31 @@
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--back-button {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.action-buttons {
+
+    button {
+        background-color: #EAEAEA;
+
+        &:hover {
+            background-color: darken($color: #EAEAEA, $amount: 10);
+        }
+
+        a {
+            text-decoration: none;
+            color: #1f1f1f;
+        }
+    }
+}
+
 .photo-grid {
     padding-top: 30px;
     display: grid;
