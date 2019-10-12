@@ -1,0 +1,39 @@
+.landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #EAEAEA;
+
+    .image-container {
+        margin: 0;
+        padding: 0;
+        
+        img {
+            height: 50px;
+            width: 500px;
+        }
+    }
+
+    &-info {
+        padding: 1rem;
+    }
+
+    &-actions {
+
+        &--button {
+            background-color: #DFDFDF;
+
+            a {
+                text-decoration: none;
+                color: #1f1f1f;
+            }
+
+            &:hover {
+                background-color: darken(#DFDFDF, 10);
+                transition: all .2s ease-in;
+            }
+        }
+    }
+}
